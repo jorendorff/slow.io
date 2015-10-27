@@ -14,7 +14,7 @@ Usage:
 
     // Load slow.io and configure the level of awfulness:
     var io = require("slow.io");
-    io.maxLatency = 1000;  // milliseconds
+    io.typicalLatency = 1000;  // milliseconds
     // Then use io as you would normally use socket.io.
 
 
