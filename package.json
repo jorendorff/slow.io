@@ -1,0 +1,23 @@
+{
+  "name": "slow.io",
+  "version": "0.0.1",
+  "description": "It's socket.io, but artificially horrible",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jorendorff/slow.io.git"
+  },
+  "keywords": [
+    "socket.io",
+    "testing",
+    "performance",
+    "network",
+    "latency"
+  ],
+  "author": "Jason Orendorff <jason.orendorff@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorendorff/socketio-latency-slider/issues"
+  },
+  "homepage": "https://github.com/jorendorff/socketio-latency-slider#readme"
+}

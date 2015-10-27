@@ -1,0 +1,18 @@
+form.slow-io-controls {
+  position: absolute;
+  top: 0;
+  right: 1em;
+  width: 25em;
+  text-align: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  font-family: sans-serif;
+  height: 3em;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  border-radius: 0 0 0.6em 0.6em;
+  z-index: 2;
+}
+form.slow-io-controls input.slow-io-latency-slider {
+  vertical-align: -0.5em;
+}
