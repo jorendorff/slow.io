@@ -7,6 +7,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/jorendorff/slow.io.git"
   },
+  "dependencies": {
+    "socket.io": "^1.3.6",
+    "socket.io-client": "^1.3.6"
+  },
   "keywords": [
     "socket.io",
     "testing",
