@@ -5,10 +5,14 @@
 // 2.  This script runs before socket.io is used.
 //
 (function () {
+  var first_socket = undefined;
   var real_io = window.io;
   window.io = function io() {
     setup();
-    return real_io.apply(undefined, arguments);
+    var socket = real_io.apply(undefined, arguments);
+    if (first_socket === undefined)
+      first_socket = socket;
+    return socket;
   };
 
   var installed = false;
@@ -27,7 +31,7 @@
         $controls.change(function (e) {
           var v = Number($controls.find(".slow-io-latency-slider")[0].value);
           $controls.find("span.slow-io-latency-value").text(v === 0 ? "0" : v + " msec");
-          socket.emit("slow-io-set-latency", v, document.cookie);
+          first_socket.emit("slow-io-set-latency", v, document.cookie);
         });
 
         installed = true;
