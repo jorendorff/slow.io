@@ -21,7 +21,7 @@
   "author": "Jason Orendorff <jason.orendorff@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jorendorff/socketio-latency-slider/issues"
+    "url": "https://github.com/jorendorff/slow.io/issues"
   },
-  "homepage": "https://github.com/jorendorff/socketio-latency-slider#readme"
+  "homepage": "https://github.com/jorendorff/slow.io#readme"
 }
